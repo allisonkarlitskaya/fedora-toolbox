@@ -16,7 +16,8 @@ dnf debuginfo-install -y $(</setup/install-debuginfo) filesystem
 dnf clean all
 
 PIPX_HOME=/opt/pipx PIPX_BIN_DIR=/usr/local/bin sh -eux /setup/pipx.sh
+sh -eux /setup/npm.sh
 
-sh /setup/nvim.sh
+sh -eux /setup/nvim.sh
 
 rm -r /setup
